@@ -1,0 +1,16 @@
+{
+  "name": "erm_toss_economy",
+  "version": "1.0.0",
+  "date": "2025-03-??",
+  "title": "ERM - Protoss Economy",
+  "author": "heyqule",
+  "description": "Internal Library for ERM Protoss economy.  It does nothing by itself.",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.34",
+    "?space-age >= 2.0.0",
+    "enemyracemanager >= 2.0.25",
+    "erm_toss_hd_assets >= 2.0.1",
+    "erm_unit_control >= 1.0.0"
+  ]
+}

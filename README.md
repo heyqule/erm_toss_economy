@@ -4,7 +4,7 @@ This mod is an internal library to share protoss economy features between protos
 This mod does not add prototype or handle game logic by itself.  It's done in the enemy mod that uses this.
 
 # Features:
-- Added protoss crystal economy.  They spawn protoss unit when it spoils.
+- Added protoss crystal item.
 - Added recipe to duplicate protoss crystal (Electromagnetic Plant).
 - Added recipe to convert crystal to biter egg (Biochamber).
 - Added recipe to produce uranium-238 with larva egg (New Assembly machine: Plasma Assembling Machine)
@@ -14,5 +14,5 @@ This mod does not add prototype or handle game logic by itself.  It's done in th
 - Added protoss damage research to upgrade their damage (10 x 20%).
 
 # Implementation Guide
-See protoss's prototypes/economy.lua
+See erm_protoss's prototypes/economy.lua
 

@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-04-11
+  
+  Changes:
+    - Fixed info.json date.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 2025-04-??
+Date: 2025-04-11
 
   Features:
     - This mod is an internal library.  It does nothing by itself.
@@ -8,9 +15,10 @@ Date: 2025-04-??
     - [space-age] Added PSI Crystal
     - [space-age] Added recipe to duplicate PSI Crystal (Electromagnetic Plant).
     - [space-age] Added recipe to convert PSI Crystal to biter egg (Biochamber).    
-    - [space-age] Added recipe to produce uranium-238(10) with PSI Crystal(1) (via Fusion Assembling Machine)
-    - [space-age] Added recipe to produce promethium with PSI Crystal (via Fusion Assembling Machine).
-    - Added Psi-controlled Nexus for player to build protoss units.
-    - Added Psi-controlled zealot, dragoon, darktemplar, archon, arbiter, cosair as playable units. They are not repairable.
-    - Added Psi-controlled protoss damage research to upgrade their damage (10 x 20%).
+    - [space-age] Added recipe to produce uranium-238(10) with PSI Crystal(1) (Fusion Assembling Machine)
+    - [space-age] Added recipe to produce promethium pack with PSI Crystal (Fusion Assembling Machine).
+    - [space-age] Added recipe to produce military pack with PSI Crystal (Chemical plant).
+    - [space-age] Added Psi-controlled Nexus for player to build protoss units.
+    - [space-age] Added Psi-controlled zealot, dragoon, darktemplar, archon, arbiter, cosair as playable units. They are not repairable.
+    - [space-age] Added Psi-controlled protoss damage research to upgrade their damage (10 x 20%).
     - Psi-controlled protoss unit supports team color.

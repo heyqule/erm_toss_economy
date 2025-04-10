@@ -1,7 +1,7 @@
 {
   "name": "erm_toss_economy",
-  "version": "1.0.0",
-  "date": "2025-03-??",
+  "version": "1.0.1",
+  "date": "2025-04-11",
   "title": "ERM - Protoss Economy",
   "author": "heyqule",
   "description": "Internal Library for ERM Protoss economy.  It does nothing by itself.",

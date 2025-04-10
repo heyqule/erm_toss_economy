@@ -14,5 +14,5 @@ This mod does not add prototype or handle game logic by itself.  It's done in th
 - Added protoss damage research to upgrade their damage (10 x 20%).
 
 # Implementation Guide
-See erm_protoss's prototypes/economy.lua
+https://github.com/heyqule/erm_toss/blob/main/prototypes/economy.lua
 

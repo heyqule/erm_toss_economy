@@ -42,7 +42,7 @@ function Unit.make(prefix)
             },
             flags = {"placeable-neutral","placeable-player", "player-creation"},
             minable = {mining_time = 1, result = prefix .. "--controllable--"..name},
-            max_health = 2500,
+            max_health = 3500,
             corpse = "protoss--large-base-corpse",
             dying_explosion = "protoss--large-building-explosion",
             allow_run_time_change_of_is_military_target = false,

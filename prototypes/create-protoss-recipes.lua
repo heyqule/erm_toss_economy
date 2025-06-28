@@ -3,7 +3,7 @@
 --- Created by heyqule.
 --- DateTime: 2/25/2025 1:31 PM
 ---
---- Create zerg recipe and items
+--- Create protoss recipe and items
 ---
 local ArmyEconomyHelper = require('__erm_libs__/prototypes/army_economy_helper')
 local ProtossItemRecipe = {}
@@ -185,7 +185,7 @@ function ProtossItemRecipe.nexus(prefix, ingredients)
         name = 'nexus',
         energy_required = 60,
         ingredients = ingredients,
-        category = "erm_controllable_buildings",
+        category = "crafting",
         amount = 1
     })
 end

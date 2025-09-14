@@ -57,7 +57,7 @@ function Unit.make(prefix, hp_mp, damage_mp)
             has_belt_immunity = true,
             max_health = hitpoint * hp_mp * ERMPlayerUnitHelper.get_health_multiplier(),
             order = prefix .. "--unit--" .. name,
-            subgroup = prefix.."--erm_controllable",
+            subgroup = "erm_controllable_units",
             shooting_cursor_size = 2,
             radar_range = 1,
             resistances = {

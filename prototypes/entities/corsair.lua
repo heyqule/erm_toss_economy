@@ -65,6 +65,7 @@ function Unit.make(prefix, hp_mp, damage_mp)
             collision_box = collision_box,
             selection_box = selection_box,
             sticker_box = selection_box,
+            collision_mask = ERMDataHelper.getFlyingCollisionMask(),
             vision_distance = vision_distance,
             movement_speed = movement_speed * ERMPlayerUnitHelper.get_speed_multiplier(),
             absorptions_to_join_attack = { pollution = 100},

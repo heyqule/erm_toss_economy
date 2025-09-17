@@ -1,9 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2025-09-15
+
+  Bugfixes:
+    - Fixed controllable corsair collision mask.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 2025-09-14
 
   Bugfixes:
-    - Fixed archon did not properly registered to army population processor.
+    - Fixed controllable archon did not properly registered to army population processor.
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4

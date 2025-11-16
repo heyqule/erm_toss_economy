@@ -26,7 +26,7 @@ local resistances = 75
 
 local movement_speed = 0.25
 -- Handles damages
-local damage_modifier = 50
+local damage_modifier = 75
 local distraction_cooldown = 30
 
 local collision_box = { { -0.3, -0.3 }, { 0.3, 0.3 } }
@@ -51,7 +51,8 @@ function Unit.make(prefix, hp_mp, damage_mp)
             order = prefix .. "--unit--" .. name,
             subgroup = "erm_controllable_units",
             shooting_cursor_size = 2,
-            radar_range = 2,
+            radar_range = 1,
+            can_open_gates = true,
             resistances = {
                 { type = "acid", percent = resistances },
                 { type = "poison", percent = resistances },

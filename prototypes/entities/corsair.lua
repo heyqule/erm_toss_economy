@@ -17,7 +17,7 @@ local util = require("util")
 local name = "corsair"
 
 -- Hitpoints
-local hitpoint = 180
+local hitpoint = 220
 
 
 -- Handles acid and poison resistance

@@ -18,7 +18,7 @@ local util = require("util")
 local name = "darktemplar"
 
 
-local hitpoint = 150
+local hitpoint = 180
 
 -- Handles acid and poison resistance
 local resistances = 75
@@ -51,7 +51,8 @@ function Unit.make(prefix, hp_mp, damage_mp)
             order = prefix .. "--unit--" .. name,
             subgroup = "erm_controllable_units",
             shooting_cursor_size = 2,
-            radar_range = 2,
+            radar_range = 1,
+            can_open_gates = true,
             resistances = {
                 { type = "acid", percent = resistances },
                 { type = "poison", percent = resistances },

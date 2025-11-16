@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2025-11-16
+
+  Changes:
+    - Zealot HP from 1600 -> 2000
+    - Darktemplar HP from 1500 -> 1800
+    - Corsair HP from 1800 -> 2000
+    - Archon HP from 3600 -> 4600
+    - Increased archon attack speed from 90 ticks to 75 ticks
+    - Increased zealot damage multiplier from 50 to 75
+    - Increased dragoon damage multiplier from 50 to 75
+    
+  Bugfixes:
+    - Fixed ground unit can't open gate.    
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 2025-09-22
 

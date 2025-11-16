@@ -21,7 +21,7 @@ local name = "archon"
 
 
 -- Hitpoints
-local hitpoint = 360
+local hitpoint = 460
 
 -- Handles acid and poison resistance
 local resistances = 80
@@ -59,7 +59,8 @@ function Unit.make(prefix, hp_mp, damage_mp)
             order = prefix .. "--unit--" .. name,
             subgroup = "erm_controllable_units",
             shooting_cursor_size = 2,
-            radar_range = 1,
+            radar_range = 2,
+            can_open_gates = true,
             resistances = {
                 { type = "acid", percent = resistances },
                 { type = "poison", percent = resistances },
@@ -88,7 +89,7 @@ function Unit.make(prefix, hp_mp, damage_mp)
                 type = "projectile",
                 range_mode = "bounding-box-to-bounding-box",
                 range = attack_range,
-                cooldown = 90,
+                cooldown = 75,
                 cooldown_deviation = 0.1,
                 damage_modifier = damage_modifier * damage_mp,
                 ammo_category = prefix.."--erm_controllable",

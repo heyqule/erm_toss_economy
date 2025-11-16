@@ -10,7 +10,7 @@ Date: 2025-11-16
     - Increased archon attack speed from 90 ticks to 75 ticks
     - Increased zealot damage multiplier from 50 to 75
     - Increased dragoon damage multiplier from 50 to 75
-    
+
   Bugfixes:
     - Fixed ground unit can't open gate.    
 

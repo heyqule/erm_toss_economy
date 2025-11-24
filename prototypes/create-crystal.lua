@@ -369,6 +369,7 @@ function ProtossCrystal.create_tech(name)
                     recipe = name.."-to-uranium"
                 }
             },
+            prerequisites = {"electromagnetic-plant"},
             research_trigger =
             {
                 type = "build-entity",

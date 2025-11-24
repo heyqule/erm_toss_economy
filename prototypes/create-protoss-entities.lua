@@ -64,7 +64,7 @@ function ProtossPlayableEntity.init(prefix)
         {
             type = "item-subgroup",
             name = prefix.."--erm_controllable" ,
-            group = "combat",
+            group = "army",
             order = prefix.."--erm_controllable"
         },
         {

@@ -367,7 +367,11 @@ function ProtossCrystal.create_tech(name)
                 {
                     type = "unlock-recipe",
                     recipe = name.."-to-uranium"
-                }
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = name.."-to-promethium"
+                },
             },
             prerequisites = {"electromagnetic-plant"},
             research_trigger =

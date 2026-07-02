@@ -23,7 +23,7 @@ function ProtossItemRecipe.zealot(prefix, ingredients)
         name = 'zealot',
         energy_required = 24,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -31,7 +31,7 @@ function ProtossItemRecipe.zealot(prefix, ingredients)
         prefix = prefix,
         name = 'zealot',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/zealot.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -50,7 +50,7 @@ function ProtossItemRecipe.dragoon(prefix, ingredients)
         name = 'dragoon',
         energy_required = 25,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -58,7 +58,7 @@ function ProtossItemRecipe.dragoon(prefix, ingredients)
         prefix = prefix,
         name = 'dragoon',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/dragoon.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -77,7 +77,7 @@ function ProtossItemRecipe.corsair(prefix, ingredients)
         name = 'corsair',
         energy_required = 30,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -85,7 +85,7 @@ function ProtossItemRecipe.corsair(prefix, ingredients)
         prefix = prefix,
         name = 'corsair',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/corsair.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -104,7 +104,7 @@ function ProtossItemRecipe.arbiter(prefix, ingredients)
         name = 'arbiter',
         energy_required = 60,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -112,7 +112,7 @@ function ProtossItemRecipe.arbiter(prefix, ingredients)
         prefix = prefix,
         name = 'arbiter',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/arbiter.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -131,7 +131,7 @@ function ProtossItemRecipe.darktemplar(prefix, ingredients)
         name = 'darktemplar',
         energy_required = 30,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -139,7 +139,7 @@ function ProtossItemRecipe.darktemplar(prefix, ingredients)
         prefix = prefix,
         name = 'darktemplar',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/darktemplar.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -158,7 +158,7 @@ function ProtossItemRecipe.archon(prefix, ingredients)
         name = 'archon',
         energy_required = 60,
         ingredients = ingredients,
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
         amount = 1
     })
 
@@ -166,7 +166,7 @@ function ProtossItemRecipe.archon(prefix, ingredients)
         prefix = prefix,
         name = 'archon',
         icon = "__erm_toss_hd_assets__/graphics/entity/icons/units/archon.png",
-        category = prefix.."--erm_controllable",
+        categories = {prefix.."--erm_controllable"},
     })
 end
 
@@ -185,7 +185,7 @@ function ProtossItemRecipe.nexus(prefix, ingredients)
         name = 'nexus',
         energy_required = 60,
         ingredients = ingredients,
-        category = "crafting",
+        categories = {"crafting"},
         amount = 1
     })
 end

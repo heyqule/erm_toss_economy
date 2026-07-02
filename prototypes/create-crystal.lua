@@ -98,7 +98,7 @@ function ProtossCrystal.create_crystal_duplication_recipe(name, additional_ingre
              type = "recipe",
              name = name.."-clone",
              icon = "__erm_toss_hd_assets__/graphics/entity/icons/items/crystal.png",
-             category = "electromagnetics",
+             categories = {"electromagnetics"},
              order = "x["..name.."]-a[crystal]",
              hide_from_player_crafting = false,
              auto_recycle = false,
@@ -109,7 +109,7 @@ function ProtossCrystal.create_crystal_duplication_recipe(name, additional_ingre
              {
                  {type = "item", name = name, amount = 3}
              },
-             result_is_always_fresh = false,
+             always_fresh = false,
              allow_productivity = true,
              allow_quality = false,
              enabled = false,
@@ -140,7 +140,7 @@ function ProtossCrystal.create_crystal_fresh_duplication_recipe(name, additional
             type = "recipe",
             name = name.."-fresh-clone",
             icon = "__erm_toss_hd_assets__/graphics/entity/icons/items/crystal.png",
-            category = "electromagnetics",
+            categories = {"electromagnetics"},
             order = "x["..name.."]-a[crystal]",
             hide_from_player_crafting = false,
             auto_recycle = false,
@@ -151,7 +151,7 @@ function ProtossCrystal.create_crystal_fresh_duplication_recipe(name, additional
             {
                 {type = "item", name = name, amount = 1}
             },
-            result_is_always_fresh = true,
+            always_fresh = true,
             allow_productivity = false,
             allow_quality = false,
             enabled = false,
@@ -196,7 +196,7 @@ function ProtossCrystal.create_crystal_to_biter_egg_recipe(name, additional_ingr
                 shift = {9, 9}
             },
         },
-        category = "organic",
+        categories = {"organic"},
         subgroup = "erm-crystal-processes",
         order = "x["..name.."]-a[biter-egg]",
         hide_from_player_crafting = false,
@@ -236,7 +236,7 @@ function ProtossCrystal.create_crystal_to_uranium238_recipe(name)
                     shift = {9, 9}
                 },
             },
-            category = "fusion-assembly",
+            categories = { "fusion-assembly" },
             subgroup = "erm-crystal-processes",
             order = "x["..name.."]-a[uranium-238]",
             hide_from_player_crafting = false,
@@ -278,7 +278,7 @@ function ProtossCrystal.create_crystal_to_military_recipe(name, color_tint)
                     shift = {9, 9}
                 },
             },
-            category = "chemistry",
+            categories = {"chemistry"},
             subgroup = "erm-crystal-processes",
             order = "x["..name.."]-a[military]",
             hide_from_player_crafting = false,
@@ -322,7 +322,7 @@ function ProtossCrystal.create_crystal_to_promethium_recipe(name)
                     shift = {9, 9}
                 },
             },
-            category = "fusion-assembly",
+            categories = { "fusion-assembly" },
             subgroup = "erm-crystal-processes",
             order = "x["..name.."]-a[promethium]",
             hide_from_player_crafting = false,
@@ -370,8 +370,8 @@ function ProtossCrystal.create_tech(name)
                 },
                 {
                     type = "unlock-recipe",
-                    recipe = name.."-to-promethium"
-                },
+                    recipe =  name.."-to-promethium"
+                }
             },
             prerequisites = {"electromagnetic-plant"},
             research_trigger =

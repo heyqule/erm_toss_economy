@@ -135,7 +135,18 @@ function Unit.make(prefix, hp_mp, damage_mp)
             dying_explosion = "protoss--small-building-explosion",
             map_color = ERM_UnitTint.tint_army_color(),
             enemy_map_color = { r=1, b=0, g=0 },
-            corpse = name .. "-corpse"
+            corpse = name .. "-corpse",
+            steering = {
+                force_unit_fuzzy_goto_behavior = true,
+                move = {
+                    radius = 4,
+                    separation_force = 0.1
+                },
+                stay = {
+                    radius = 7,
+                    separation_force = 0.1
+                },
+            },
         },
         {
             type = "corpse",

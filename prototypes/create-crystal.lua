@@ -343,7 +343,8 @@ function ProtossCrystal.create_crystal_to_promethium_recipe(name)
         }})
 end
 
-function ProtossCrystal.create_tech(name)
+function ProtossCrystal.create_tech(name, max_productivity)
+    max_productivity = max_productivity or 5
     data.extend({
         {
             type = "technology",
@@ -381,6 +382,59 @@ function ProtossCrystal.create_tech(name)
             }
         }
     })
+
+    --- Assign the producitivity tech name to race_settings.boss_tech_upgrade_name under control.lua.  It lets
+    --- boss processor to upgrade the tech.  Each level must be a separated tech to use for script trigger,  since max_level doesn't work
+    for i = 1, max_productivity, 1 do
+        data.extend({
+            {
+                type = "technology",
+                name = name .. "-productivity-"..i,
+                localised_name = {"technology-name."..name.."-productivity", tostring(i)},
+                order = name .. "-productivity-"..i,
+                icon = "__erm_toss_hd_assets__/graphics/entity/icons/items/crystal.png",
+                icon_size = 64,
+                effects = {
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-to-promethium",
+                        change = 0.1
+                    },
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-to-military",
+                        change = 0.1
+                    },
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-to-uranium",
+                        change = 0.05,
+                    },
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-to-biter-egg",
+                        change = 0.1,
+                    },
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-clone",
+                        change = 0.2,
+                    },
+                    {
+                        type = "change-recipe-productivity",
+                        recipe = name .. "-fresh-clone",
+                        change = 0.2,
+                    },
+                },
+                prerequisites = { name .. "-processing" },
+                research_trigger = {
+                    type = "scripted",
+                    trigger_description = { "technology-description.erm-boss-productivity-tech" }
+                },
+                upgrade = true
+            }
+        })
+    end    
 
     if data.raw.technology["military-science-pack"] then
         table.insert(data.raw.technology["military-science-pack"].effects, {

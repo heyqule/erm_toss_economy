@@ -51,7 +51,7 @@ function ProtossCrystal.create_item(name, trigger_name)
                     }
                 }
             },
-            fuel_category = "chemical",
+            fuel_categories = {"chemical"},
             fuel_value = "25MJ",
             subgroup = "erm-crystal-processes",
             order = "c[erm-crystal-processes]-a[toss-crystal]",
